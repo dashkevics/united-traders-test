@@ -12,6 +12,19 @@ body {
 	}
 }
 
+header {
+	height: 500px;
+	background-image: url('../images/main-bg.jpg');
+	background-position: center;
+	color: white;
+
+	h1 {
+		font-size: 46px;
+		font-weight: lighter;
+		margin-bottom: 84px;
+	}	
+}
+
 .header {
 	text-align: center;
 	margin-top: 80px;
@@ -32,7 +45,8 @@ body {
 	min-width: 340px;
 	background-color: #FAFAFA;
 	margin: 20px;
-	p {
+	
+  p {
 		font-size: 14px;
 		margin-bottom: 37px;
 		height: 73px;
@@ -40,11 +54,13 @@ body {
 		margin-top: 11px;
 		line-height: 18.12px;
 	}
-		img {
+		
+    img {
 			margin-top: 40px;
 			margin-bottom: 25px;
 		}
-			a {
+			
+    a {
 				font-size: 14px;
 				margin-bottom: 30px;
 			}
@@ -74,7 +90,8 @@ body {
 	text-align: center;
 	max-width: 270px;
 	margin: 45px;
-	h5 {
+	
+  h5 {
 		margin-top: 25px;
 		margin-bottom: 11px;
 
@@ -100,4 +117,24 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+footer {
+	background: #19263F;
+	height: 240px;
+
+	.menu {
+		width: 300px;
+		a {
+			color: white;
+		}
+	}
+	.social-media {
+		width: 220px;
+	}
+
+	p {
+		color: white;
+		font-weight: bold;
+	}
 }
