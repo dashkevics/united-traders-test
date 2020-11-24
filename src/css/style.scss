@@ -1,3 +1,32 @@
-h1 {
-	color: green;
+header {
+	height: 500px;
+	background-image: url('../images/main-bg.jpg');
+	background-position: center;
+	color: white;
+
+	h1 {
+		font-size: 46px;
+		font-weight: lighter;
+		margin-bottom: 84px;
+	}	
+}
+
+footer {
+	background: #19263F;
+	height: 240px;
+
+	.menu {
+		width: 300px;
+		a {
+			color: white;
+		}
+	}
+	.social-media {
+		width: 220px;
+	}
+
+	p {
+		color: white;
+		font-weight: bold;
+	}
 }
