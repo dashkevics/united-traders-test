@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   font-family: "PT Sans", sans-serif;
+  transition: all 0.2s ease-in-out;
 }
 
-body h5 {
+h5 {
   font-size: 18px;
   font-weight: 700;
   margin: 0;
@@ -16,20 +18,26 @@ header {
   color: white;
 }
 header h1 {
-  font-size: 46px;
-  font-weight: lighter;
+  font-size: 48px;
+  font-weight: 300;
   margin-bottom: 84px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-link:active {
+  color: #FF0000 !important;
+}
+.nav-link:hover {
+  color: #FFFF00 !important;
+}
+.nav-link:focus {
+  color: #FF0000 !important;
 }
 
 .header {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 32px;
-}
-
-.about-cards {
-  display: flex;
-  flex-direction: row;
 }
 
 .about-card {
@@ -40,6 +48,10 @@ header h1 {
   min-width: 340px;
   background-color: #FAFAFA;
   margin: 20px;
+}
+.about-card:hover {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease-in-out;
 }
 .about-card p {
   font-size: 14px;
@@ -57,23 +69,19 @@ header h1 {
   font-size: 14px;
   margin-bottom: 30px;
 }
-
-.about-card:hover {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
-  transition: all 0.5s ease-in-out;
+.about-card a:hover {
+  color: #FFFF00;
+}
+.about-card a:active {
+  color: #FF0000;
+}
+.about-card a:focus {
+  color: #FF0000;
 }
 
-.small-image {
-  margin-top: 46px !important;
-  margin-bottom: 31px !important;
-}
-
-.features-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+#small-image {
+  margin-top: 46px;
+  margin-bottom: 31px;
 }
 
 .features-card {
@@ -85,6 +93,15 @@ header h1 {
   margin-top: 25px;
   margin-bottom: 11px;
 }
+.features-card a:hover {
+  color: #FFFF00;
+}
+.features-card a:active {
+  color: #FF0000;
+}
+.features-card a:focus {
+  color: #FF0000;
+}
 
 .button {
   width: 231px;
@@ -95,9 +112,23 @@ header h1 {
   box-sizing: border-box;
   border-radius: 4px;
 }
+.button:hover {
+  transition: all 0.3s ease-in-out;
+  background: #85B657;
+  color: white;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+.button:focus, .button :active {
+  background: #85B657;
+  color: white;
+}
 
 .sponsors a {
   margin: 25px;
+  margin-bottom: 120px;
+}
+.sponsors a:hover {
+  transform: scale(1.1);
 }
 
 .small-logo {
@@ -111,22 +142,30 @@ footer {
   background: #19263F;
   height: 240px;
 }
-
 footer .menu {
   width: 300px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
-
 footer .menu a {
   color: white;
 }
-
+footer .menu a:hover {
+  color: #FFFF00;
+}
+footer .menu a:focus, footer .menu a :active {
+  color: #FF0000;
+}
 footer .social-media {
   width: 220px;
 }
-
+footer .social-media a:hover {
+  transform: scale(1.1);
+}
 footer p {
   color: white;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
